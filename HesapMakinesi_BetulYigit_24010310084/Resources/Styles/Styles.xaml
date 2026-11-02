@@ -1,0 +1,101 @@
+﻿<?xml version="1.0" encoding="UTF-8" ?>
+<ResourceDictionary
+    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml">
+
+    <!-- Temel Label stili -->
+    <Style x:Key="BaseLabelStyle" TargetType="Label">
+        <Setter Property="TextColor"
+                Value="{AppThemeBinding Light={StaticResource LightTextColor},
+                                        Dark={StaticResource DarkTextColor}}" />
+        <Setter Property="FontSize" Value="16" />
+    </Style>
+
+    <Style TargetType="Label"
+           BasedOn="{StaticResource BaseLabelStyle}" />
+
+    <!-- Temel Button stili -->
+    <Style x:Key="BaseButtonStyle" TargetType="Button">
+        <Setter Property="BackgroundColor"
+                Value="{AppThemeBinding Light={StaticResource LightSurfaceColor},
+                                        Dark={StaticResource DarkSurfaceColor}}" />
+        <Setter Property="TextColor"
+                Value="{AppThemeBinding Light={StaticResource LightTextColor},
+                                        Dark={StaticResource DarkTextColor}}" />
+        <Setter Property="FontSize" Value="20" />
+        <Setter Property="CornerRadius" Value="12" />
+        <Setter Property="HeightRequest" Value="58" />
+        <Setter Property="Padding" Value="8" />
+        <Setter Property="BorderWidth" Value="0" />
+    </Style>
+
+    <Style TargetType="Button"
+           BasedOn="{StaticResource BaseButtonStyle}" />
+
+    <!-- Sayı butonu -->
+    <Style x:Key="NumberButtonStyle"
+           TargetType="Button"
+           BasedOn="{StaticResource BaseButtonStyle}">
+        <Setter Property="FontAttributes" Value="Bold" />
+    </Style>
+
+    <!-- İşlem butonu -->
+    <Style x:Key="OperatorButtonStyle"
+           TargetType="Button"
+           BasedOn="{StaticResource BaseButtonStyle}">
+        <Setter Property="BackgroundColor"
+                Value="{AppThemeBinding Light={StaticResource AccentColor},
+                                        Dark={StaticResource AccentDarkColor}}" />
+        <Setter Property="TextColor" Value="White" />
+    </Style>
+
+    <!-- Eşittir butonu -->
+    <Style x:Key="EqualsButtonStyle"
+           TargetType="Button"
+           BasedOn="{StaticResource BaseButtonStyle}">
+        <Setter Property="BackgroundColor" Value="{StaticResource EqualColor}" />
+        <Setter Property="TextColor" Value="White" />
+        <Setter Property="FontAttributes" Value="Bold" />
+    </Style>
+
+    <!-- Temel Entry stili -->
+    <Style x:Key="BaseEntryStyle" TargetType="Entry">
+        <Setter Property="TextColor"
+                Value="{AppThemeBinding Light={StaticResource LightTextColor},
+                                        Dark={StaticResource DarkTextColor}}" />
+        <Setter Property="BackgroundColor"
+                Value="{AppThemeBinding Light={StaticResource LightSurfaceColor},
+                                        Dark={StaticResource DarkSurfaceColor}}" />
+        <Setter Property="FontSize" Value="25" />
+        <Setter Property="HeightRequest" Value="65" />
+    </Style>
+
+    <Style TargetType="Entry"
+           BasedOn="{StaticResource BaseEntryStyle}" />
+
+    <!-- Sayfa başlığı -->
+    <Style x:Key="PageTitleStyle"
+           TargetType="Label"
+           BasedOn="{StaticResource BaseLabelStyle}">
+        <Setter Property="FontSize" Value="23" />
+        <Setter Property="FontAttributes" Value="Bold" />
+        <Setter Property="HorizontalOptions" Value="Center" />
+    </Style>
+
+    <!-- Hesaplama ekranı -->
+    <Style x:Key="DisplayEntryStyle"
+           TargetType="Entry"
+           BasedOn="{StaticResource BaseEntryStyle}">
+        <Setter Property="FontSize" Value="30" />
+        <Setter Property="HorizontalTextAlignment" Value="End" />
+        <Setter Property="VerticalTextAlignment" Value="Center" />
+    </Style>
+
+    <!-- Sayfa arka planı -->
+    <Style TargetType="ContentPage">
+        <Setter Property="BackgroundColor"
+                Value="{AppThemeBinding Light={StaticResource LightPageColor},
+                                        Dark={StaticResource DarkPageColor}}" />
+    </Style>
+
+</ResourceDictionary>

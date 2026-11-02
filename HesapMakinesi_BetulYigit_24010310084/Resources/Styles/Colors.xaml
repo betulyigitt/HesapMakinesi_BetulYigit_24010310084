@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="UTF-8" ?>
+<ResourceDictionary
+    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml">
+
+    <!-- Ana renkler -->
+    <Color x:Key="AccentColor">#4169E1</Color>
+    <Color x:Key="AccentDarkColor">#7895F5</Color>
+    <Color x:Key="EqualColor">#2878D0</Color>
+
+    <!-- Açık tema -->
+    <Color x:Key="LightPageColor">#F3F5F9</Color>
+    <Color x:Key="LightSurfaceColor">#FFFFFF</Color>
+    <Color x:Key="LightTextColor">#20242C</Color>
+    <Color x:Key="LightSecondaryTextColor">#697386</Color>
+    <Color x:Key="LightBorderColor">#DDE2EA</Color>
+
+    <!-- Koyu tema -->
+    <Color x:Key="DarkPageColor">#171A21</Color>
+    <Color x:Key="DarkSurfaceColor">#252A35</Color>
+    <Color x:Key="DarkTextColor">#F4F6FA</Color>
+    <Color x:Key="DarkSecondaryTextColor">#AAB2C0</Color>
+    <Color x:Key="DarkBorderColor">#3B4352</Color>
+
+    <!-- Hata ve uyarı -->
+    <Color x:Key="ErrorColor">#D64545</Color>
+
+</ResourceDictionary>

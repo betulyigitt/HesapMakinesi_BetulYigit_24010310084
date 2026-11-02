@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<ContentPage
+    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    x:Class="HesapMakinesi_BetulYigit_24010310084.ScientificPage"
+    Title="Bilimsel">
+
+    <VerticalStackLayout Padding="12" Spacing="12">
+
+        <Label Text="Bilimsel Hesap Makinesi"
+               Style="{StaticResource PageTitleStyle}" />
+
+        <Entry x:Name="DisplayEntry"
+               Text="0"
+               IsReadOnly="True"
+               Style="{StaticResource DisplayEntryStyle}" />
+
+        <Grid RowDefinitions="*,*,*,*,*,*"
+              ColumnDefinitions="*,*,*,*,*"
+              RowSpacing="7"
+              ColumnSpacing="7"
+              VerticalOptions="FillAndExpand">
+
+            <!-- 1. Satır -->
+            <Button Text="C" Grid.Row="0" Grid.Column="0"
+                    Style="{StaticResource OperatorButtonStyle}"
+                    Clicked="OnButtonClicked" />
+            <Button Text="⌫" Grid.Row="0" Grid.Column="1"
+                    Style="{StaticResource OperatorButtonStyle}"
+                    Clicked="OnButtonClicked" />
+            <Button Text="(" Grid.Row="0" Grid.Column="2"
+                    Style="{StaticResource OperatorButtonStyle}"
+                    Clicked="OnButtonClicked" />
+            <Button Text=")" Grid.Row="0" Grid.Column="3"
+                    Style="{StaticResource OperatorButtonStyle}"
+                    Clicked="OnButtonClicked" />
+            <Button Text="÷" Grid.Row="0" Grid.Column="4"
+                    Style="{StaticResource OperatorButtonStyle}"
+                    Clicked="OnButtonClicked" />
+
+            <!-- 2. Satır -->
+            <Button Text="sin" Grid.Row="1" Grid.Column="0"
+                    Style="{StaticResource OperatorButtonStyle}"
+                    Clicked="OnButtonClicked" />
+            <Button Text="cos" Grid.Row="1" Grid.Column="1"
+                    Style="{StaticResource OperatorButtonStyle}"
+                    Clicked="OnButtonClicked" />
+            <Button Text="tan" Grid.Row="1" Grid.Column="2"
+                    Style="{StaticResource OperatorButtonStyle}"
+                    Clicked="OnButtonClicked" />
+            <Button Text="√" Grid.Row="1" Grid.Column="3"
+                    Style="{StaticResource OperatorButtonStyle}"
+                    Clicked="OnButtonClicked" />
+            <Button Text="×" Grid.Row="1" Grid.Column="4"
+                    Style="{StaticResource OperatorButtonStyle}"
+                    Clicked="OnButtonClicked" />
+
+            <!-- 3. Satır -->
+            <Button Text="log" Grid.Row="2" Grid.Column="0"
+                    Style="{StaticResource OperatorButtonStyle}"
+                    Clicked="OnButtonClicked" />
+            <Button Text="ln" Grid.Row="2" Grid.Column="1"
+                    Style="{StaticResource OperatorButtonStyle}"
+                    Clicked="OnButtonClicked" />
+            <Button Text="abs" Grid.Row="2" Grid.Column="2"
+                    Style="{StaticResource OperatorButtonStyle}"
+                    Clicked="OnButtonClicked" />
+            <Button Text="^" Grid.Row="2" Grid.Column="3"
+                    Style="{StaticResource OperatorButtonStyle}"
+                    Clicked="OnButtonClicked" />
+            <Button Text="−" Grid.Row="2" Grid.Column="4"
+                    Style="{StaticResource OperatorButtonStyle}"
+                    Clicked="OnButtonClicked" />
+
+            <!-- 4. Satır -->
+            <Button Text="7" Grid.Row="3" Grid.Column="0"
+                    Style="{StaticResource NumberButtonStyle}"
+                    Clicked="OnButtonClicked" />
+            <Button Text="8" Grid.Row="3" Grid.Column="1"
+                    Style="{StaticResource NumberButtonStyle}"
+                    Clicked="OnButtonClicked" />
+            <Button Text="9" Grid.Row="3" Grid.Column="2"
+                    Style="{StaticResource NumberButtonStyle}"
+                    Clicked="OnButtonClicked" />
+            <Button Text="π" Grid.Row="3" Grid.Column="3"
+                    Style="{StaticResource OperatorButtonStyle}"
+                    Clicked="OnButtonClicked" />
+            <Button Text="+" Grid.Row="3" Grid.Column="4"
+                    Style="{StaticResource OperatorButtonStyle}"
+                    Clicked="OnButtonClicked" />
+
+            <!-- 5. Satır -->
+            <Button Text="4" Grid.Row="4" Grid.Column="0"
+                    Style="{StaticResource NumberButtonStyle}"
+                    Clicked="OnButtonClicked" />
+            <Button Text="5" Grid.Row="4" Grid.Column="1"
+                    Style="{StaticResource NumberButtonStyle}"
+                    Clicked="OnButtonClicked" />
+            <Button Text="6" Grid.Row="4" Grid.Column="2"
+                    Style="{StaticResource NumberButtonStyle}"
+                    Clicked="OnButtonClicked" />
+            <Button Text="e" Grid.Row="4" Grid.Column="3"
+                    Style="{StaticResource OperatorButtonStyle}"
+                    Clicked="OnButtonClicked" />
+            <Button Text="." Grid.Row="4" Grid.Column="4"
+                    Style="{StaticResource NumberButtonStyle}"
+                    Clicked="OnButtonClicked" />
+
+            <!-- 6. Satır -->
+            <Button Text="1" Grid.Row="5" Grid.Column="0"
+                    Style="{StaticResource NumberButtonStyle}"
+                    Clicked="OnButtonClicked" />
+            <Button Text="2" Grid.Row="5" Grid.Column="1"
+                    Style="{StaticResource NumberButtonStyle}"
+                    Clicked="OnButtonClicked" />
+            <Button Text="3" Grid.Row="5" Grid.Column="2"
+                    Style="{StaticResource NumberButtonStyle}"
+                    Clicked="OnButtonClicked" />
+            <Button Text="0" Grid.Row="5" Grid.Column="3"
+                    Style="{StaticResource NumberButtonStyle}"
+                    Clicked="OnButtonClicked" />
+            <Button Text="=" Grid.Row="5" Grid.Column="4"
+                    Style="{StaticResource EqualsButtonStyle}"
+                    Clicked="OnButtonClicked" />
+
+        </Grid>
+    </VerticalStackLayout>
+</ContentPage>

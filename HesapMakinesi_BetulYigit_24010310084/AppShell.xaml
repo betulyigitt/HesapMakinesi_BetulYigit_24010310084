@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<Shell
+    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:local="clr-namespace:HesapMakinesi_BetulYigit_24010310084"
+    x:Class="HesapMakinesi_BetulYigit_24010310084.AppShell"
+    FlyoutBehavior="Flyout"
+    Title="Hesap Makinesi">
+
+    <FlyoutItem Title="Standart Hesap Makinesi"
+                Route="standard">
+        <ShellContent
+            Title="Standart"
+            ContentTemplate="{DataTemplate local:StandardPage}" />
+    </FlyoutItem>
+
+    <FlyoutItem Title="Bilimsel Hesap Makinesi"
+                Route="scientific">
+        <ShellContent
+            Title="Bilimsel"
+            ContentTemplate="{DataTemplate local:ScientificPage}" />
+    </FlyoutItem>
+
+    <FlyoutItem Title="Ayarlar"
+                Route="settings">
+        <ShellContent
+            Title="Ayarlar"
+            ContentTemplate="{DataTemplate local:SettingsPage}" />
+    </FlyoutItem>
+
+</Shell>

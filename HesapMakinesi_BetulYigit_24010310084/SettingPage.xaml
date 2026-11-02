@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<ContentPage
+    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    x:Class="HesapMakinesi_BetulYigit_24010310084.SettingsPage"
+    Title="Ayarlar">
+
+    <ScrollView>
+        <VerticalStackLayout Padding="24" Spacing="22">
+
+            <Label Text="Ayarlar"
+                   Style="{StaticResource PageTitleStyle}" />
+
+            <Label Text="Görünüm"
+                   FontSize="21"
+                   FontAttributes="Bold" />
+
+            <Label Text="Uygulamanın temasını seçebilirsiniz."
+                   FontSize="15" />
+
+            <Frame Padding="18"
+                   CornerRadius="14"
+                   HasShadow="False"
+                   BackgroundColor="{AppThemeBinding Light={StaticResource LightSurfaceColor},
+                                                    Dark={StaticResource DarkSurfaceColor}}">
+
+                <VerticalStackLayout Spacing="18">
+
+                    <RadioButton
+                        x:Name="LightRadio"
+                        Content="Açık tema (Light)"
+                        GroupName="ThemeGroup"
+                        CheckedChanged="OnThemeChanged" />
+
+                    <RadioButton
+                        x:Name="DarkRadio"
+                        Content="Koyu tema (Dark)"
+                        GroupName="ThemeGroup"
+                        CheckedChanged="OnThemeChanged" />
+
+                    <RadioButton
+                        x:Name="SystemRadio"
+                        Content="Sistem ayarını kullan"
+                        GroupName="ThemeGroup"
+                        CheckedChanged="OnThemeChanged" />
+
+                </VerticalStackLayout>
+            </Frame>
+
+            <Label Text="Hesap Makinesi"
+                   FontSize="18"
+                   FontAttributes="Bold" />
+
+            <Label Text="Standart ve bilimsel hesaplama işlemlerini destekleyen .NET MAUI uygulaması."
+                   FontSize="14" />
+
+            <Label Text="Geliştirici: Betül Yiğit"
+                   FontSize="14" />
+
+            <Label Text="Öğrenci No: 24010310084"
+                   FontSize="14" />
+
+            <Label Text="Sürüm: 1.0"
+                   FontSize="14" />
+
+        </VerticalStackLayout>
+    </ScrollView>
+</ContentPage>
